@@ -5,3 +5,9 @@ let promise = new Promise(function (resolve , reject) {
   reject('err');
   console.log('first');
 });
+
+promise.then(function(data) {
+  console.log('data:' , data);
+},function(err){
+  console.log('err:' , err);
+});
